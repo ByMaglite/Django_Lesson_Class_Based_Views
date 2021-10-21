@@ -75,6 +75,7 @@ def student_update(request, id):
     
     return render(request, "fscohort/student_update.html", context)
 
+
 class StudentUpdateView(UpdateView):
     model = Student
     form_class = StudentForm
